@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(255,222,0,1) 100%);
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    font-size: 16px;
+    text-align: end;
+    margin-bottom: 15px;
+}
+
+.submit {
+    font-size: 16px;
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    z-index: 1;
+}
+
+.reset {
+    font-size: 16px;
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    z-index: 1;
+}
+
+#my-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(255,222,0,1) 100%);
+}
+
+#my-canvas.active {
+    visibility: visible;
+    z-index: -1;
+}
