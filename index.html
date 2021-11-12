@@ -11,6 +11,16 @@
       <div class="container">
         <h1>Number Game</h1>
         <form>
+          <div class="text-wrapper">
+            <div class="timer">
+            <h3>Timer</h3>
+            <p id="countdown">0:00</p>
+            </div>
+            <div class="total-guesses">
+            <h3># of Guesses</h3>
+            <p id="guesses">0</p>
+            </div>
+            </div>
         <p class="instructions">
           Guess a number between 1-100.
         </p>
@@ -20,6 +30,7 @@
         <button class="reset" type="reset">Reset</button>
         </div>
         </form>
+        <textarea type="text" id="feedback" placeholder="What do you think of this game?"></textarea>
       </div>
       <canvas id="my-canvas"></canvas>
     </main>
